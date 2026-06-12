@@ -5,7 +5,7 @@ import { AboutSection } from './components/AboutSection';
 import { SkillsSection } from './components/SkillsSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { ContactSection } from './components/ContactSection';
-import { User, Wrench, Folder, Mail } from 'lucide-react';
+import { User, Wrench, MousePointer2, Mail } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 type Page = 'about' | 'skills' | 'projects' | 'contact';
@@ -13,7 +13,7 @@ type Page = 'about' | 'skills' | 'projects' | 'contact';
 const NAV_ICONS: Record<Page, LucideIcon> = {
   about: User,
   skills: Wrench,
-  projects: Folder,
+  projects: MousePointer2,
   contact: Mail,
 };
 
