@@ -23,10 +23,11 @@ A premium, interactive personal portfolio website designed with a clean, Apple-i
 
 ## Technical Stack
 
-*   **Core Frameworks:** React · TypeScript · Vite
-*   **Styling & UI:** Tailwind CSS · Vanilla CSS
-*   **Animations:** Framer Motion
-*   **Deployment:** Vercel
+*   **Core Frameworks:** <img src="https://cdn.simpleicons.org/react/61DAFB" width="16" height="16" align="center" alt="React" /> React &nbsp;·&nbsp; <img src="https://cdn.simpleicons.org/typescript/3178C6" width="16" height="16" align="center" alt="TypeScript" /> TypeScript &nbsp;·&nbsp; <img src="https://cdn.simpleicons.org/vite/646CFF" width="16" height="16" align="center" alt="Vite" /> Vite
+*   **Styling & UI:** <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="16" height="16" align="center" alt="Tailwind CSS" /> Tailwind CSS &nbsp;·&nbsp; <img src="https://cdn.simpleicons.org/css3/1572B6" width="16" height="16" align="center" alt="CSS" /> Vanilla CSS
+*   **Animations:** <img src="https://cdn.simpleicons.org/framer/0055FF" width="16" height="16" align="center" alt="Framer Motion" /> Framer Motion
+*   **Backend & Databases:** <img src="https://cdn.simpleicons.org/python/3776AB" width="16" height="16" align="center" alt="Python" /> Python &nbsp;·&nbsp; <img src="https://cdn.simpleicons.org/mysql/4479A1" width="16" height="16" align="center" alt="MySQL" /> MySQL &nbsp;·&nbsp; <img src="https://cdn.simpleicons.org/cplusplus/00599C" width="16" height="16" align="center" alt="C++" /> C++
+*   **Deployment:** <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/vercel/ffffff"><img src="https://cdn.simpleicons.org/vercel/000000" width="16" height="16" align="center" alt="Vercel" /></picture> Vercel
 
 ---
 
@@ -63,7 +64,7 @@ npm run build
 
 ## Contact & Connect
 
-*   **Email:** [just.darshan510@gmail.com](mailto:just.darshan510@gmail.com)
-*   **GitHub:** [github.com/justdarshan510](https://github.com/justdarshan510)
-*   **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/darshan-sudhakar-b106ba39b)
-*   **Instagram:** [just.darshan510](https://www.instagram.com/just.darshan510)
+*   <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" align="center" alt="Email" /> **Email:** [just.darshan510@gmail.com](mailto:just.darshan510@gmail.com)
+*   <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/ffffff"><img src="https://cdn.simpleicons.org/github/181717" width="16" height="16" align="center" alt="GitHub" /></picture> **GitHub:** [github.com/justdarshan510](https://github.com/justdarshan510)
+*   <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="16" height="16" align="center" alt="LinkedIn" /> **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/darshan-sudhakar-b106ba39b)
+*   <img src="https://cdn.simpleicons.org/instagram/E4405F" width="16" height="16" align="center" alt="Instagram" /> **Instagram:** [just.darshan510](https://www.instagram.com/just.darshan510)
