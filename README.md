@@ -14,19 +14,19 @@ A premium, interactive personal portfolio website designed with a clean, Apple-i
 
 ## Key Features
 
-*   **Responsive Layout:** Seamless navigation and layout wrapping between mobile and desktop viewports.
-*   **Tactile Interactivity:** Mouse-following and drag-touch follow animations on the main avatar, alongside floating, drifting 3D corner background items.
-*   **Embedded Sandbox:** A portal-based Safari-style browser mockup window to preview live projects directly inside the application.
-*   **Apple UI Symbols:** Sleek, thin-stroke Lucide icons aligned beside navigation tabs in the sticky top header.
+*   📱 **Responsive Layout:** Seamless navigation and layout wrapping between mobile and desktop viewports.
+*   🧲 **Tactile Interactivity:** Mouse-following and drag-touch follow animations on the main avatar, alongside floating, drifting 3D corner background items.
+*   📦 **Embedded Sandbox:** A portal-based Safari-style browser mockup window to preview live projects directly inside the application.
+*   🎛️ **Apple UI Symbols:** Sleek, thin-stroke Lucide icons aligned beside navigation tabs in the sticky top header.
 
 ---
 
 ## Technical Stack
 
-*   **Core Frameworks:** React · TypeScript · Vite
-*   **Styling & UI:** Tailwind CSS · Vanilla CSS
-*   **Animations:** Framer Motion
-*   **Deployment:** Vercel
+*   💻 **Core Frameworks:** React · TypeScript · Vite
+*   ✨ **Styling & UI:** Tailwind CSS · Vanilla CSS
+*   ⚡ **Animations:** Framer Motion
+*   🌐 **Deployment:** Vercel
 
 ---
 
@@ -34,9 +34,9 @@ A premium, interactive personal portfolio website designed with a clean, Apple-i
 
 A real-time multiplayer cricket bidding and player auction application.
 
-*   **Real-time Synchronization:** Built using Firestore Realtime Listeners to support concurrent bidding lobbies.
-*   **Transactional Budgets:** Engineered with strict client/server validations to prevent franchise team budget overdrafts.
-*   **Optimistic UI:** Designed state update mechanisms to reflect bids instantly (under 100ms) for high-frequency trading.
+*   ⚡ **Real-time Synchronization:** Built using Firestore Realtime Listeners to support concurrent bidding lobbies.
+*   💰 **Transactional Budgets:** Engineered with strict client/server validations to prevent franchise team budget overdrafts.
+*   ⏱️ **Optimistic UI:** Designed state update mechanisms to reflect bids instantly (under 100ms) for high-frequency trading.
 
 ---
 
@@ -63,7 +63,7 @@ npm run build
 
 ## Contact & Connect
 
-*   **Email:** [just.darshan510@gmail.com](mailto:just.darshan510@gmail.com)
-*   **GitHub:** [github.com/justdarshan510](https://github.com/justdarshan510)
-*   **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/darshan-sudhakar-b106ba39b)
-*   **Instagram:** [just.darshan510](https://www.instagram.com/just.darshan510)
+*   ✉️ **Email:** [just.darshan510@gmail.com](mailto:just.darshan510@gmail.com)
+*   💻 **GitHub:** [github.com/justdarshan510](https://github.com/justdarshan510)
+*   💼 **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/darshan-sudhakar-b106ba39b)
+*   📸 **Instagram:** [just.darshan510](https://www.instagram.com/just.darshan510)
