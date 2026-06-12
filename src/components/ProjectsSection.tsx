@@ -245,7 +245,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
   return (
     <div
       ref={cardContainerRef}
-      className="w-full h-[68vh] sm:h-[72vh] min-h-[460px] sm:min-h-[520px] md:min-h-[600px] flex flex-col justify-start relative"
+      className="w-full h-auto md:h-[68vh] md:min-h-[600px] flex flex-col justify-start relative mb-8 md:mb-0"
     >
       <motion.div
         style={{
@@ -253,7 +253,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
           top: `calc(5rem + ${index * 28}px)`,
           willChange: 'transform'
         }}
-        className="sticky w-full bg-white/40 backdrop-blur-xl border border-white/60 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] p-4 sm:p-5 md:p-6 flex flex-col gap-4 sm:gap-5 h-[63vh] sm:h-[66vh] min-h-[410px] sm:min-h-[460px] md:min-h-[540px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] select-none"
+        className="sticky w-full bg-white/40 backdrop-blur-xl border border-white/60 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] p-4 sm:p-5 md:p-6 flex flex-col gap-4 sm:gap-5 h-auto md:h-[63vh] md:min-h-[540px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] select-none pb-6 sm:pb-8 md:pb-6"
       >
         {/* Top Row */}
         <div className="flex justify-between items-center w-full">
@@ -299,7 +299,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
         </div>
 
         {/* Bottom Row: Two-Column Layout (Description & Image) */}
-        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 w-full flex-grow overflow-hidden items-stretch py-1 sm:py-2">
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 w-full flex-grow overflow-visible md:overflow-hidden items-stretch py-1 sm:py-2">
           {/* Left Column (45% width) - Technical & Marketing Description */}
           <div className="w-full md:w-[45%] flex flex-col justify-between text-left select-text gap-4 sm:gap-6">
             <div className="flex flex-col gap-3 sm:gap-4">
