@@ -51,9 +51,48 @@ export const Magnet: React.FC<MagnetProps> = ({
       }
     };
 
+    const handleTouchMove = (e: TouchEvent) => {
+      if (!ref.current || e.touches.length === 0) return;
+      const touch = e.touches[0];
+
+      const rect = ref.current.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+
+      const distanceX = touch.clientX - centerX;
+      const distanceY = touch.clientY - centerY;
+
+      const isInside =
+        touch.clientX >= rect.left - padding &&
+        touch.clientX <= rect.right + padding &&
+        touch.clientY >= rect.top - padding &&
+        touch.clientY <= rect.bottom + padding;
+
+      if (isInside) {
+        setIsHovered(true);
+        setPosition({
+          x: distanceX / strength,
+          y: distanceY / strength,
+        });
+      } else {
+        setIsHovered(false);
+        setPosition({ x: 0, y: 0 });
+      }
+    };
+
+    const handleTouchEnd = () => {
+      setIsHovered(false);
+      setPosition({ x: 0, y: 0 });
+    };
+
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchmove', handleTouchMove, { passive: true });
+    window.addEventListener('touchend', handleTouchEnd);
+
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
     };
   }, [padding, strength]);
 
