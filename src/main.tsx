@@ -1,4 +1,4 @@
-// Portfolio entry point
+// Entry point for the portfolio application
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
