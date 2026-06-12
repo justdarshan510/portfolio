@@ -1,4 +1,4 @@
-# Darshan Portfolio
+# 🧑‍💻 Darshan Portfolio
 
 <p align="center">
   <img src="https://img.shields.io/badge/Live_Demo-Vercel-burgundy?style=for-the-badge&logo=vercel&logoColor=white&color=8A1425&labelColor=121212" alt="Live Demo" />
