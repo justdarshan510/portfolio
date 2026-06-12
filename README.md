@@ -6,7 +6,7 @@
 
 ## Overview
 
-A premium, interactive personal portfolio website designed with a clean, Apple-inspired minimalist aesthetic. Built with a unified Stone-Beige color palette, custom navigation symbols, and fluid interactive animations.
+A clean, interactive personal portfolio website built with a Stone-Beige color palette, custom navigation symbols, and fluid animations.
 
 **Live Link:** [portfolio-bj6b.vercel.app](https://portfolio-bj6b.vercel.app/)
 
@@ -16,8 +16,8 @@ A premium, interactive personal portfolio website designed with a clean, Apple-i
 
 *   **Responsive Layout:** Seamless navigation and layout wrapping between mobile and desktop viewports.
 *   **Tactile Interactivity:** Mouse-following and drag-touch follow animations on the main avatar, alongside floating, drifting 3D corner background items.
-*   **Embedded Sandbox:** A portal-based Safari-style browser mockup window to preview live projects directly inside the application.
-*   **Apple UI Symbols:** Sleek, thin-stroke Lucide icons aligned beside navigation tabs in the sticky top header.
+*   **Embedded Sandbox:** A portal-based browser mockup window to preview live projects directly inside the application.
+*   **Navigation Symbols:** Sleek, thin-stroke Lucide icons aligned beside navigation tabs in the sticky top header.
 
 ---
 
