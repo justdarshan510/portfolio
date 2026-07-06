@@ -51,7 +51,6 @@ const PROJECTS = [
     category: 'Personal Project',
     name: 'CricBid',
     link: 'https://cric-bid-kappa.vercel.app/',
-    githubLink: 'https://github.com/justdarshan510/CricBid',
     description: 'CricBid is a real-time multiplayer cricket bidding and player auction application. Users join live lobbies, manage franchise budgets, bid dynamically on players, and inspect player performance metrics to assemble a championship team.',
     highlights: ['Real-time Bidding', 'Lobby Rooms', 'Budget Tracking', 'Draft Analytics'],
     languages: [
