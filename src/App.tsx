@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -19,6 +19,38 @@ const NAV_ICONS: Record<Page, LucideIcon> = {
 
 function App() {
   const [activePage, setActivePage] = useState<Page>('about');
+  const isNavigatingRef = useRef(false);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    const timer = setTimeout(() => {
+      isNavigatingRef.current = false;
+    }, 600); // wait for Framer Motion exit/enter transitions to finish
+    return () => clearTimeout(timer);
+  }, [activePage]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isNavigatingRef.current) return;
+      
+      const scrollPosition = Math.ceil(window.innerHeight + window.scrollY);
+      const documentHeight = document.documentElement.scrollHeight;
+      
+      // If we are within 20 pixels of the bottom, trigger navigation
+      if (scrollPosition >= documentHeight - 20) {
+        const PAGES: Page[] = ['about', 'skills', 'projects', 'contact'];
+        const currentIndex = PAGES.indexOf(activePage);
+        
+        if (currentIndex < PAGES.length - 1) {
+          isNavigatingRef.current = true;
+          setActivePage(PAGES[currentIndex + 1]);
+        }
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [activePage]);
 
   const renderPage = () => {
     switch (activePage) {
