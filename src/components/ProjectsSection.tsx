@@ -64,7 +64,7 @@ const PROJECTS = [
     num: '02',
     category: 'AI Tool',
     name: 'Enhancer',
-    link: 'https://github.com/justdarshan510/Enhancer',
+    link: 'https://enhancer-ten.vercel.app/',
     description: 'Enhancer is a tool to upscale and improve the quality of blurred images using AI algorithms. It restores details and provides crisp, high-resolution outputs.',
     highlights: ['Image Upscaling', 'AI Processing', 'Resolution Enhancement', 'Python'],
     languages: [
@@ -78,7 +78,7 @@ const PROJECTS = [
     num: '03',
     category: 'Dashboard',
     name: 'Hydroponics Dashboard',
-    link: 'https://github.com/justdarshan510/hydroponic-dashboard',
+    link: 'https://hydroponic-dashboard-theta.vercel.app/',
     description: 'A comprehensive dashboard for monitoring hydroponic systems. It visualizes data metrics like water levels, pH, and temperature to ensure optimal crop growth.',
     highlights: ['Data Visualization', 'Real-time Metrics', 'Crop Monitoring', 'Responsive UI'],
     languages: [
@@ -311,10 +311,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
             <button
               onClick={() => {
                 const targetLink = (project as any).githubLink || project.link;
-                const iframeUrl = targetLink.includes('github.com') 
-                  ? targetLink.replace('github.com', 'github1s.com') 
-                  : targetLink;
-                onOpenDemo(iframeUrl);
+                onOpenDemo(targetLink);
               }}
               className="rounded-full bg-[#121212] text-white hover:bg-[#8A1425] active:scale-95 transition-all duration-300 font-semibold uppercase tracking-wider px-5 py-2 sm:px-6 sm:py-2.5 text-xs select-none border-none outline-none shadow-md cursor-pointer"
               title="Open inside secure iframe sandbox"
