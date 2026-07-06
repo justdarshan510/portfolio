@@ -140,7 +140,7 @@ const IframeModal: React.FC<IframeModalProps> = ({ url, onClose, title }) => {
           <div className="flex items-center gap-2 bg-[#1E1E1E] border border-white/10 rounded-full px-4 py-1.5 text-xs text-white/50 w-[50%] max-w-[400px] justify-center relative overflow-hidden">
             <Lock size={10} className="text-[#27C93F] shrink-0" />
             <span className="truncate select-none font-mono text-[10px] sm:text-xs">
-              cric-bid-kappa.vercel.app
+              {url.replace(/^https?:\/\//, '')}
             </span>
           </div>
 
@@ -309,7 +309,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
           {/* Live Project Action Buttons: Sandbox Live Preview and direct External Link */}
           <div className="flex items-center gap-2.5">
             <button
-              onClick={() => onOpenDemo(project.link)}
+              onClick={() => {
+                const sandboxUrl = project.link.includes('github.com') 
+                  ? project.link.replace('https://github.com/', 'https://stackblitz.com/github/') 
+                  : project.link;
+                onOpenDemo(sandboxUrl);
+              }}
               className="rounded-full bg-[#121212] text-white hover:bg-[#8A1425] active:scale-95 transition-all duration-300 font-semibold uppercase tracking-wider px-5 py-2 sm:px-6 sm:py-2.5 text-xs select-none border-none outline-none shadow-md cursor-pointer"
               title="Open inside secure iframe sandbox"
             >
