@@ -311,7 +311,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
             <button
               onClick={() => {
                 const targetLink = (project as any).githubLink || project.link;
-                onOpenDemo(targetLink);
+                const iframeUrl = targetLink.includes('github.com') 
+                  ? targetLink.replace('github.com', 'github1s.com') 
+                  : targetLink;
+                onOpenDemo(iframeUrl);
               }}
               className="rounded-full bg-[#121212] text-white hover:bg-[#8A1425] active:scale-95 transition-all duration-300 font-semibold uppercase tracking-wider px-5 py-2 sm:px-6 sm:py-2.5 text-xs select-none border-none outline-none shadow-md cursor-pointer"
               title="Open inside secure iframe sandbox"
