@@ -51,6 +51,7 @@ const PROJECTS = [
     category: 'Personal Project',
     name: 'CricBid',
     link: 'https://cric-bid-kappa.vercel.app/',
+    githubLink: 'https://github.com/justdarshan510/CricBid',
     description: 'CricBid is a real-time multiplayer cricket bidding and player auction application. Users join live lobbies, manage franchise budgets, bid dynamically on players, and inspect player performance metrics to assemble a championship team.',
     highlights: ['Real-time Bidding', 'Lobby Rooms', 'Budget Tracking', 'Draft Analytics'],
     languages: [
@@ -310,9 +311,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
           <div className="flex items-center gap-2.5">
             <button
               onClick={() => {
-                const sandboxUrl = project.link.includes('github.com') 
-                  ? project.link.replace('https://github.com/', 'https://stackblitz.com/github/') 
-                  : project.link;
+                const targetLink = (project as any).githubLink || project.link;
+                const sandboxUrl = targetLink.includes('github.com') 
+                  ? targetLink.replace('https://github.com/', 'https://stackblitz.com/github/') 
+                  : targetLink;
                 onOpenDemo(sandboxUrl);
               }}
               className="rounded-full bg-[#121212] text-white hover:bg-[#8A1425] active:scale-95 transition-all duration-300 font-semibold uppercase tracking-wider px-5 py-2 sm:px-6 sm:py-2.5 text-xs select-none border-none outline-none shadow-md cursor-pointer"
