@@ -1,0 +1,40 @@
+# System Prompt: Premium Apple-Inspired 3D Creator Portfolio
+
+Use this prompt to build or recreate the exact premium, high-fidelity portfolio landing page.
+
+---
+
+### 1. Core Design System & Theme
+- Color Palette: Main Background: Stone-Beige (#DCD5C6), Primary Text: Deep Charcoal (#121212), Primary Accent: Deep Burgundy (#8A1425), Cream Accent (#E6DFD3), and Frosted-white glassmorphic panels (bg-white/40 backdrop-blur-xl border-white/60).
+- Typography: Apple system font stack (San Francisco, Segoe UI, Roboto, sans-serif).
+- Routing: SPA Client-side state router representing exactly 4 pages: About, Skills, Projects, and Contact, with dynamic Framer Motion slide-fade transitions.
+
+### 2. Shared Sticky Navbar Header
+- Sticky navbar (bg-[#DCD5C6]/90 backdrop-blur-md border-[#121212]/5).
+- Clean Lucide icons next to uppercase labels: ABOUT (User), SKILLS (Wrench), PROJECTS (Folder), and CONTACT (Mail).
+- Active tab text is Burgundy (#8A1425), font-black, and scale-105.
+
+### 3. About / Hero Section
+- Two-Column Grid: Left side has a Burgundy-to-Charcoal gradient title "HI, I'M DARSHAN" and a Burgundy pill CTA button. Right side features the avatar portrait illustration with an interactive Magnet hover/touch effect.
+- Corner Floating Assets: 3D computer setup items in corners (PC Tower top-left, Keyboard bottom-left, Monitor top-right, Mouse bottom-right) drifting with CSS animation loops and glowing burgundy on hover.
+- Transition: Bottom Burgundy fluid organic wave SVG divider.
+
+### 4. Skills Section
+- Translucent cards showcasing tech stack (TypeScript, JavaScript, Python, React, C++, SQL).
+- Cards scale up and glow with each language's brand color on hover.
+- Transition: Bottom Burgundy wave SVG divider.
+
+### 5. Projects Section
+- Frosted glassmorphic card representing "CricBid" (IPL Auction Simulator).
+- Height is fluid (h-auto) on mobile and fixed (h-[63vh]) on desktop to prevent languages and details from clipping.
+- Key highlights tags and 2x2 grid codebase languages distribution details.
+- Action Buttons: "Live Preview" (opens portal-based browser sandbox modal) and direct "External Link" icon.
+- Mock Browser Sandbox: React Portal (z-[100] on document.body) mock browser mockup showing live app in an iframe with Safari-style controls, reload, and close triggers.
+
+### 6. Contact & Social Profiles
+- Email: just.darshan510@gmail.com
+- Social Links: Instagram (just.darshan510), GitHub (justdarshan510), and LinkedIn (darshan-sudhakar-b106ba39b) mapped to real URLs opening in a new tab.
+
+### 7. Custom Components
+- Magnet Effect (Magnet.tsx): Responsive cursor/finger tracking using mousemove on desktop and touchmove ({ passive: true }) + touchend on mobile.
+- Fade-In Wrapper (FadeIn.tsx): Viewport-based opacity and offset animation triggers.
