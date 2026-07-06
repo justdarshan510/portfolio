@@ -45,19 +45,48 @@ const CSSIcon: React.FC = () => (
   </svg>
 );
 
-const LANGUAGES = [
-  { name: 'TypeScript', percentage: 86.2, color: '#3178C6', icon: <TSIcon /> },
-  { name: 'JavaScript', percentage: 6.4, color: '#F7DF1E', icon: <JSIcon /> },
-  { name: 'Python', percentage: 3.8, color: '#3776AB', icon: <PythonIcon /> },
-  { name: 'CSS', percentage: 3.6, color: '#563D7C', icon: <CSSIcon /> }
-];
-
 const PROJECTS = [
   {
     num: '01',
     category: 'Personal Project',
     name: 'CricBid',
-    link: 'https://cric-bid-kappa.vercel.app/'
+    link: 'https://cric-bid-kappa.vercel.app/',
+    description: 'CricBid is a real-time multiplayer cricket bidding and player auction application. Users join live lobbies, manage franchise budgets, bid dynamically on players, and inspect player performance metrics to assemble a championship team.',
+    highlights: ['Real-time Bidding', 'Lobby Rooms', 'Budget Tracking', 'Draft Analytics'],
+    languages: [
+      { name: 'TypeScript', percentage: 86.2, color: '#3178C6', icon: <TSIcon /> },
+      { name: 'JavaScript', percentage: 6.4, color: '#F7DF1E', icon: <JSIcon /> },
+      { name: 'Python', percentage: 3.8, color: '#3776AB', icon: <PythonIcon /> },
+      { name: 'CSS', percentage: 3.6, color: '#563D7C', icon: <CSSIcon /> }
+    ]
+  },
+  {
+    num: '02',
+    category: 'AI Tool',
+    name: 'Enhancer',
+    link: 'https://github.com/justdarshan510/Enhancer',
+    description: 'Enhancer is a tool to upscale and improve the quality of blurred images using AI algorithms. It restores details and provides crisp, high-resolution outputs.',
+    highlights: ['Image Upscaling', 'AI Processing', 'Resolution Enhancement', 'Python'],
+    languages: [
+      { name: 'Python', percentage: 95.0, color: '#3776AB', icon: <PythonIcon /> },
+      { name: 'JavaScript', percentage: 5.0, color: '#F7DF1E', icon: <JSIcon /> },
+      { name: 'CSS', percentage: 0.0, color: '#563D7C', icon: <CSSIcon /> },
+      { name: 'TypeScript', percentage: 0.0, color: '#3178C6', icon: <TSIcon /> }
+    ]
+  },
+  {
+    num: '03',
+    category: 'Dashboard',
+    name: 'Hydroponics Dashboard',
+    link: 'https://github.com/justdarshan510/hydroponic-dashboard',
+    description: 'A comprehensive dashboard for monitoring hydroponic systems. It visualizes data metrics like water levels, pH, and temperature to ensure optimal crop growth.',
+    highlights: ['Data Visualization', 'Real-time Metrics', 'Crop Monitoring', 'Responsive UI'],
+    languages: [
+      { name: 'TypeScript', percentage: 70.0, color: '#3178C6', icon: <TSIcon /> },
+      { name: 'CSS', percentage: 30.0, color: '#563D7C', icon: <CSSIcon /> },
+      { name: 'JavaScript', percentage: 0.0, color: '#F7DF1E', icon: <JSIcon /> },
+      { name: 'Python', percentage: 0.0, color: '#3776AB', icon: <PythonIcon /> }
+    ]
   }
 ];
 
@@ -307,7 +336,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
                 Project Overview
               </h4>
               <p className="text-xs sm:text-sm md:text-base text-[#121212]/80 leading-relaxed font-light">
-                CricBid is a real-time multiplayer cricket bidding and player auction application. Users join live lobbies, manage franchise budgets, bid dynamically on players, and inspect player performance metrics to assemble a championship team.
+                {project.description}
               </p>
             </div>
             
@@ -316,7 +345,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
                 Key Highlights
               </h4>
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                {['Real-time Bidding', 'Lobby Rooms', 'Budget Tracking', 'Draft Analytics'].map((tag) => (
+                {project.highlights.map((tag) => (
                   <span 
                     key={tag}
                     className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider text-[#8A1425] bg-[#8A1425]/5 border border-[#8A1425]/10 px-2.5 py-1 rounded-full select-none"
@@ -342,7 +371,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, project, targetScale, 
 
             {/* Legend Grid with Custom Cards */}
             <div className="grid grid-cols-2 gap-3 sm:gap-4 flex-grow content-center">
-              {LANGUAGES.map((lang) => (
+              {project.languages.map((lang) => (
                 <div
                   key={lang.name}
                   className="flex items-center gap-3 bg-white/40 backdrop-blur-sm border border-white/50 rounded-2xl p-3 sm:p-4 shadow-sm hover:scale-[1.02] hover:bg-white/60 transition-all duration-300"
